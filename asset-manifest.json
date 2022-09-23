@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WordDevLed/static/css/main.d0d7d355.css",
+    "main.js": "/WordDevLed/static/js/main.762f4faa.js",
+    "index.html": "/WordDevLed/index.html",
+    "main.d0d7d355.css.map": "/WordDevLed/static/css/main.d0d7d355.css.map",
+    "main.762f4faa.js.map": "/WordDevLed/static/js/main.762f4faa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0d7d355.css",
+    "static/js/main.762f4faa.js"
+  ]
+}
