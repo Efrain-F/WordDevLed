@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+// STYLES
 import './App.css';
 
+// CONTROLLER Context
+import WordController from './controllers/WordController';
+import ControllerPageSections from './controllers/PageSectionsController';
+import TimerController from './controllers/TimerController';
+
+// COMPONENTS
+import NavBar from './components/navegacion/NavBar';
+import MatrizWord from './components/matrizWord/MatrizWord';
+import Teclado from './components/tecladoTemplate/teclado';
+import { useEffect } from 'react';
+
+
 function App() {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ControllerPageSections>
+        <WordController>
+
+          <TimerController>
+            <NavBar></NavBar>
+          </TimerController>
+          
+          <MatrizWord></MatrizWord>
+          <Teclado></Teclado>
+
+        </WordController>
+      </ControllerPageSections>
     </div>
   );
 }

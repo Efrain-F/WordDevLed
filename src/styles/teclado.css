@@ -1,0 +1,65 @@
+.teclado{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.teclado-fila{
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+}
+.teclado-fila button{
+    background-color: #4a4e69;
+    color: #f2e9e4;
+    width:23px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enter{
+    width: 56px !important;
+}
+.borrar{
+    width: 35px !important;
+}
+
+@media screen and (min-width:360px) {
+    .teclado-fila button{
+        width:28px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .teclado{
+        gap: 6px;
+    }
+    .enter{
+        width: 76px !important;
+    }
+}
+@media screen and (min-width:490px) {
+    .teclado-fila button{
+        width:35px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .teclado{
+        gap: 6px;
+    }
+    .enter{
+        width: 96px !important;
+    }
+    .borrar{
+        width: 45px !important;
+    }
+}
